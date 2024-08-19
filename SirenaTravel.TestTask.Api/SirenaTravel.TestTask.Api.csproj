@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SirenaTravel.TestTask.Application\SirenaTravel.TestTask.Application.csproj" />
+    <ProjectReference Include="..\SirenaTravel.TestTask.Domain\SirenaTravel.TestTask.Domain.csproj" />
+    <ProjectReference Include="..\SirenaTravel.TestTask.Infrastructure\SirenaTravel.TestTask.Infrastructure.csproj" />
+    <ProjectReference Include="..\SirenaTravel.TestTask.Persistence\SirenaTravel.TestTask.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
