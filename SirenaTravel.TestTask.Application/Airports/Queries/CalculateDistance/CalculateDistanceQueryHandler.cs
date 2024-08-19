@@ -1,12 +1,11 @@
-﻿using CSharpFunctionalExtensions;
-using SirenaTravel.TestTask.Application.Core.Abstractions;
+﻿using SirenaTravel.TestTask.Application.Core.Abstractions;
 using SirenaTravel.TestTask.Application.Core.Messaging;
 using SirenaTravel.TestTask.Domain.Airports.ValueObjects;
 using SirenaTravel.TestTask.Domain.Core;
 
 namespace SirenaTravel.TestTask.Application.Airports.Queries.CalculateDistance;
 
-internal class CalculateDistanceQueryHandler : IQueryHandler<CalculateDistanceQuery, double>
+public class CalculateDistanceQueryHandler : IQueryHandler<CalculateDistanceQuery, double>
 {
     private readonly IAirportRepository _airportRepository;
     private readonly IDistanceCalculator _distanceCalculator;
